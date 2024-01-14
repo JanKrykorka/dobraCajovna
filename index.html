@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HM Building.cz s.r.o. - DOMŮ</title>
+    <link rel="stylesheet" type="text/css" href="./styles/styles.css">
+</head>
+<body>
+    <div class="page">
+        <header>
+            <nav class="navbar">
+
+                <a href="./index.html" class="navbar__logo colored-image">
+                    <img src="./media/dcl-logo-white-322x181.png" alt="logo" height="44px">
+                </a>
+
+                <menu class="navbar__menu hamburger-menu-list navbar__menu--hidden">
+                    <li class="nav-item">
+                        <a class="active" href="index.html">DOMŮ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="active" href="index.html">DOMŮ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="active" href="index.html">DOMŮ</a>
+                    </li>
+                </menu>
+
+                    <div class="navbar__hamburger">
+                        <a class="hamburger-menu" href="javascript:void(0)">menu</a>
+                    </div>
+                    <script>
+                        const hamburgerButtons = document.querySelectorAll(".hamburger-menu");
+                        for (const btn of hamburgerButtons) {
+                            btn.onclick = (event) => {
+                                const menus = document.querySelectorAll(".hamburger-menu-list");
+                                for (const menu of menus) {
+                                    menu.classList.toggle("navbar__menu--hidden");
+                                }
+                            }
+                        }
+                    </script>
+            </nav> 
+            <div class="page-header__img">  
+                    <h1>Dobrá Čajovna</h1>
+                
+            </div>
+            
+            <div class="page-header__text">
+                <p><span class="not_heading_heading">Využijte škálu našich <span class="orange">služeb</span></span></p>
+                <p>Ačkoli provádíme především <b>průmyslové stavby</b>, není pro nás problém Vám <b>rodinný domek na klíč</b>, nebo jen hrubou stavbu. Nejsou nám cizí ani <b>rekonstrukce budov</b> a jejich údržba a to včetně okolních ploch.</p>
+            </div>
+            
+        </header>
+        </div>
+</body>
+</html>
