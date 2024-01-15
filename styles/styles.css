@@ -1,12 +1,18 @@
 
+@font-face {
+    font-family:'Cursive-Heading';
+    src: url(../fonts/HomemadeApple-Regular.ttf);
+
+
+}
 
 :root{
  --background_white: #F5F5F5; 
- --spec_orange: #EB6C27;
+ --green: #588157;
 }
 
 body{
-    font-family: 'Courier New', Courier, monospace;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -49,7 +55,7 @@ html{
     display: flex;
     flex-direction: column;
     top: 100%;
-    background-color: var(--spec_orange);
+    background-color: var(--green);
     padding: 1rem;
     gap: .5rem;
 }
@@ -87,7 +93,7 @@ html{
     margin-right: calc((46px - 25px) / 2);
     border:12.5px solid var(--background_white);
     border-top: none;
-    border-bottom-color: var(--spec_orange);
+    border-bottom-color: var(--green);
     border-bottom-style: solid;
     border-bottom-width:25px ;
 }
@@ -143,6 +149,7 @@ header a.btn--orange-bg{
 }
 
 .page-header__img h1{
+    font-family: 'Cursive-Heading';
     color: #F5F5F5;
     font-weight: 800 ;
     font-size: 30px;
@@ -169,7 +176,7 @@ header a.btn--orange-bg{
 
 .page-header__text> ul li::before, .page-header__text>ul li li::before{
     content: "\2022";
-    color: var(--spec_orange);
+    color: var(--green);
     font-weight: 900;
     display: inline-block;
     width: 1em;
@@ -206,10 +213,10 @@ header a.btn--orange-bg{
     }
 
     .nav-item{
-        padding:1em;
+        padding:2.1em;
     }   
     .nav-item:hover{
-        background-color:var(--spec_orange);
+        background-color:var(--green);
         color: #F5F5F5;
     } 
     
@@ -258,6 +265,7 @@ header a.btn--orange-bg{
     }
 
     .page-header__img>h1{
+        font-family: ;
         margin-top: 2em;
         font-size: 7em;
     }
